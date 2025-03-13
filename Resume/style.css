@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-size: 2rem;
+    color: #333;
+}
+
+.college-name {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 5px;
+}
+
+.line {
+    width: 80%;
+    border: 0;
+    border-top: 2px solid #333;
+    margin-top: 20px;
+}
+
+.about-me {
+    width: 80%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.about-me h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.about-me p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.skills {
+    width: 80%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill {
+    font-size: 1.2rem;
+    color: #555;
+    background-color: #f4f4f4;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s ease;
+    width: 150px;
+}
+
+.skill:hover {
+    background-color: #e2e2e2;
+}
+
+.education {
+    width: 80%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.education h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+td {
+    background-color: #fff;
+    color: #555;
+}
+
+
+
+
+
+
