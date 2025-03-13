@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <h2 style="text-align: center;">Student Registration Form</h2>
+
+        <form id="studentForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 4px;">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 4px;">
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 4px;">
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required style="width: 100%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 4px;">
+            
+            <label for="course">Course:</label>
+            <select id="course" name="course" style="width: 100%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 4px;">
+                <option value="Computer Science">Computer Science</option>
+                <option value="Information Technology">Information Technology</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Mechanical">Mechanical</option>
+            </select>
+            
+            <button type="submit" style="background-color: #28a745; color: white; padding: 10px; border: none; cursor: pointer; width: 100%;">Register</button>
+        </form>
+        <p id="message"></p>
+    </div>
+</body>
+</html>
