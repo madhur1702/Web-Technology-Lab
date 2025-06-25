@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+</head>
+<body>
+
+<form>
+  <fieldset>
+    <legend><b>Registration Form</b></legend>
+
+    <label for="fname">First Name *</label><br>
+    <input type="text" id="fname" name="fname" required><br><br>
+
+    <label for="mname">Middle Name *</label><br>
+    <input type="text" id="mname" name="mname" required><br><br>
+
+    <label for="lname">Last Name *</label><br>
+    <input type="text" id="lname" name="lname" required><br><br>
+
+    <label>Gender *</label><br>
+    <input type="radio" id="male" name="gender" value="Male" required>
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="Other">
+    <label for="other">Other</label><br><br>
+
+    <label for="birthDate">Birth Date *</label><br>
+    <input type="date" id="birthDate" name="birthDate" required><br><br>
+
+    <label for="contact">Contact Number *</label><br>
+    <input type="text" id="contact" name="contact" required><br><br>
+
+    <label for="email">Email Address *</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="address">Address *</label><br>
+    <textarea id="address" name="address" rows="4" cols="30" required></textarea><br><br>
+
+    <label for="photo">Upload Photo *</label><br>
+    <input type="file" id="photo" name="photo" required><br><br>
+
+    <label for="pass">Enter Password *</label><br>
+    <input type="password" id="pass" name="pass" required><br><br>
+
+    <label for="rpass">Re-enter Password *</label><br>
+    <input type="password" id="rpass" name="rpass" required><br><br>
+
+    <input type="checkbox" id="agreement" name="agreement" required>
+    I agree to all <a href="#">terms</a> and <a href="#">conditions</a>.<br><br>
+
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+</body>
+</html>

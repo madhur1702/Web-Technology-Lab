@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Registration</title>
+</head>
+<body>
+
+<h2>Employee Registration Form</h2>
+
+<form onsubmit="return validateForm()">
+  <fieldset>
+    <legend><b>Registration Form</b></legend>
+
+    First Name *<br>
+    <input type="text" id="fname"><br><br>
+
+    Email *<br>
+    <input type="text" id="email"><br><br>
+
+    Mobile Number *<br>
+    <input type="text" id="mobile"><br><br>
+
+    Address *<br>
+    <textarea id="address" rows="3" cols="30"></textarea><br><br>
+
+    Salary *<br>
+    <input type="text" id="salary"><br><br>
+
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+<script>
+function validateForm() {
+  // Get values
+  let name = document.getElementById("fname").value.trim();
+  let email = document.getElementById("email").value.trim();
+  let mobile = document.getElementById("mobile").value.trim();
+  let address = document.getElementById("address").value.trim();
+  let salary = document.getElementById("salary").value.trim();
+
+  // Name check
+  if (name === "") {
+    alert("Please enter your name");
+    return false;
+  }
+
+  // Email check
+  let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(email)) {
+    alert("Please enter a valid email address");
+    return false;
+  }
+
+  // Mobile number check (10 digits)
+  let mobilePattern = /^[0-9]{10}$/;
+  if (!mobilePattern.test(mobile)) {
+    alert("Please enter a valid 10-digit mobile number");
+    return false;
+  }
+
+  // Address check
+  if (address === "") {
+    alert("Please enter your address");
+    return false;
+  }
+
+  // Salary check (must be a number)
+  if (isNaN(salary) || salary === "") {
+    alert("Please enter a valid salary amount");
+    return false;
+  }
+
+  alert("Form submitted successfully!");
+  return true;
+}
+</script>
+
+</body>
+</html>

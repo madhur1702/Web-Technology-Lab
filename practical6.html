@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prime Numbers in a Range</title>
+</head>
+<body bgcolor="blue">
+
+<h2>Find Prime Numbers in a Range</h2>
+
+<label>Start:</label>
+<input type="number" id="start"><br><br>
+
+<label>End:</label>
+<input type="number" id="end"><br><br>
+
+<button onclick="findPrimes()">Find Primes</button>
+
+<p id="result"></p>
+
+<script>
+function isPrime(n) {
+  if (n < 2) return false;
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) return false;
+  }
+  return true;
+}
+
+function findPrimes() {
+  let start = parseInt(document.getElementById("start").value);
+  let end = parseInt(document.getElementById("end").value);
+  let primes = [];
+
+  for (let i = start; i <= end; i++) {
+    if (isPrime(i)) {
+      primes.push(i);
+    }
+  }
+
+  document.getElementById("result").innerHTML = "Prime numbers: " + primes.join(", ");
+}
+</script>
+
+</body>
+</html>

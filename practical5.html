@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Reverse and Length</title>
+</head>
+<body>
+
+<h2>JavaScript String and Number Reversal</h2>
+
+<p id="strOutput"></p>
+<p id="numOutput"></p>
+<p id="lengthOutput"></p>
+
+<script>
+  function ReverseString(str) {
+    return str.split('').reverse().join('');
+  }
+
+  // String example
+  let str = "ABCDEFGHIJKLMOPQ";
+  let reversedStr = ReverseString(str);
+  document.getElementById("strOutput").innerHTML = "Reversed String: " + reversedStr;
+
+  // Show length
+  document.getElementById("lengthOutput").innerHTML = "Length of String: " + str.length;
+
+  // Number example (converted to string first)
+  let num = 123456789;
+  let reversedNum = ReverseString(num.toString());
+  document.getElementById("numOutput").innerHTML = "Reversed Number: " + reversedNum;
+</script>
+
+</body>
+</html>
